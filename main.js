@@ -90,11 +90,11 @@ console.log(String(finalR)[5]);
 
 //task seventeen//
 
-let num4 = +prompt("Enter a four-digit number");
-let nom1 = console.log(String(num4)[0]);
-let nom2 = console.log(String(num4)[1]);
-let nom3 = console.log(String(num4)[2]);
-let nom4 = console.log(String(num4)[3]);
+let num4 = "1234";
+let nom1 = +num4[0];
+let nom2 = +num4[1];
+let nom3 = +num4[2];
+let nom4 = +num4[3];
 console.log(nom1+nom2+nom3+nom4);
 
 
@@ -106,10 +106,11 @@ console.log(`Hello, ${finalName}!`);
 
 // task nineteen//
 
-let price = +prompt("Please write down 530.90");
-let totalam = String(price)[0,2];
-let amtotal = String(price)[-1];
-console.log(`${totalam} manat ${amtotal} qepik`);
+let price = prompt("Please write down 530.90");
+let index = price.indexOf(".");
+let manat = price.slice(0,index);
+let coins = price.slice(index+1);
+console.log(`${manat} manat ${coins} qepik`);
 
 // task twenty//
 
@@ -118,10 +119,21 @@ console.log(salary*13/100);
 
 //task twenty one//
 
-let familyName = prompt("Please write you Full name and father name")
+let familyName = prompt("Please write you Full name and father name");
+let indexT = familyName.indexOf("");
+let lastIndex = familyName.lastIndexOf("");
+let surname = familyName.slice(0,indexT);
+let nameFirstletter = familyName.slice(indexT+1,indexT+2);
+let fatherName = familyName.slice(lastIndex+1,lastIndex+2);
+console.log(`${surname} ${nameFirstletter} ${fatherName} `);
 
 
-
+//task twenty two//
+let val = +prompt("Amount");
+let year1 = +prompt("year");
+let percent = +prompt("percent");
+let result1 = val + ((val/100 * percent) * year);
+console.log(result1);
 
 
 //task twenty three//
