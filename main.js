@@ -151,11 +151,136 @@ console.log(a===b);
 console.log(a!=b);
 console.log(a!==b); 
 
+//task twenty four//
+
+let question = confirm("Are you above 18 years?");
+if (question == true){
+    alert("Welcome to our page!")
+}
+else{
+    alert("Access denied")
+}
+
+//task twenty five//
+
+//let numberTwo = +prompt("Please write down three two digit numbers");
+//let firstN = numberTwo.indexOf("");
 
 
 
+//task twenty five new version//
+
+let onedigit = +prompt("Please add first two digit");
+let twodigit = +prompt("Please add second two digit");
+let threedigit =+prompt("Please add third two digit");
+let summ = onedigit+twodigit+threedigit;
+let avarage= summ/3;
+console.log(avarage);
 
 
+//task twenty six//
+
+let yearB = +prompt("Please write down any year");
+if(yearB %4==0){
+    alert("It`s a long year")
+}
+else{
+    alert("This is not long year")
+}
+
+//task twenty seven//
+
+//let id = prompt ('Enter product id: 1,2,3,4 or else');
+//switch(new Product1().id())
+
+//{
+
+    //case (id === '1') {
+      //  alert ('Available 10 pcs.');
+     // }
+     // case  (id === '2') {
+     //   alert ('Available 256 pcs.');
+     //  }
+     // case  (id === '3') {
+      //  alert ('Available 53 pcs.');
+      // }
+      //  case  (id === '4') {
+      //  alert ('There are 3 available.');
+      // }
+      //case {
+      //  alert ("Available 0 pcs");
+     // } 
+      
+  
+//}
+
+
+//task twenty eight//
+
+//let gender = prompt("Waht is your gender? F or M?")
+//if(gender = F){
+   // alert("Your gerder is female")
+//}
+//else{
+   // alert("Your gender is Male")
+//}
+
+
+//let gender = prompt("What is your gender? F or M?");
+//let female= F;
+//let genderResult = female == F ? "Female" : "Male";
+//console.log(genderResult);
+
+
+//task twenty nine//
+
+let currentMonth = +prompt("What is the current mouth?");
+if(currentMonth==1){
+    alert("This Is January")
+}
+if(currentMonth==2){
+    alert("This Is February")
+}
+if(currentMonth==3){
+    alert("This Is March")
+}
+if(currentMonth==4){
+    alert("This Is April")
+}
+if(currentMonth==5){
+    alert("This Is May")
+}
+if(currentMonth==6){
+    alert("This Is June")
+}
+if(currentMonth==7){
+    alert("This Is July")
+}
+if(currentMonth==8){
+    alert("This Is August")
+}
+if(currentMonth==9){
+    alert("This Is September")
+}
+if(currentMonth==10){
+    alert("This Is October")
+}
+if(currentMonth==11){
+    alert("This Is November")
+}
+if(currentMonth==12){
+    alert("This Is December")
+}
+
+//Task thity//
+
+let data = prompt("Please write today date: YYYY.MM.DD");
+let inDex =date.indexOf(".");
+let YeaR =date.slice(0,inDex);
+let monTh=date.slice(inDex+1);
+let indeX=date.lastIndex(".");
+let DaY=date.slice(indeX+1);
+console.log(`${DaY} ${monTh} ${YeaR}-cu il`);
 
 
 
